@@ -8,6 +8,7 @@ void setup(){
  size(1600, 800);
 }
 void draw(){
+  int s = second();
   r = 255;
   g = 255;
   b = 255;
@@ -25,10 +26,10 @@ void draw(){
   ellipse(600, 300, 40, 40);
   ellipse(900, 300, 40, 40);
   fill(204,0,0);
-  strokeWeight(4);
+  strokeWeight(5);
   stroke(204,0,0); 
-  triangle(450, 450, 750, 750, 750, 550);
-  triangle(750, 750, 750, 550, 1050, 450);
+  triangle(450+(10*s), 450, 750, 750, 750, 550);
+  triangle(750, 750, 750, 550, 1050-(10*s), 450);
   
 }
 }
